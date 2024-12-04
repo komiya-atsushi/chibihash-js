@@ -36,6 +36,10 @@ export function chibihash64_v2(
   _key: string | Uint8Array | DataView,
   seed: bigint,
 ): bigint {
+  if (!(seed >= 0n && seed <= 0xffff_ffff_ffff_ffffn)) {
+    throw new Error('seed must be a 64-bit unsigned bigint value');
+  }
+
   const key = toDataView(_key);
   let p = 0;
   const len = key.byteLength;
