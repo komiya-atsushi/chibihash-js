@@ -1,0 +1,27 @@
+{
+  "name": "chibihash-js",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "hash",
+    "chibihash"
+  ],
+  "author": {
+    "name": "KOMIYA Atsushi",
+    "url": "https://github.com/komiya-atsushi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komiya-atsushi/chibihash-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/komiya-atsushi/chibihash-js/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [],
+  "scripts": {},
+  "devDependencies": {}
+}
