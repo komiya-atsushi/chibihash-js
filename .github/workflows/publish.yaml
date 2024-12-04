@@ -50,11 +50,6 @@ jobs:
 
       - name: Commit and tag
         run: |
-          git add \
-            package.json \
-            package-lock.json \
-            packages/chibihash-js/package.json
-          git commit -m "v${{ steps.get-version-string.outputs.version }}"
           git tag "v${{ steps.get-version-string.outputs.version }}"
 
       - name: Build
