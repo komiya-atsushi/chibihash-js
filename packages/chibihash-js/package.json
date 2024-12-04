@@ -21,7 +21,17 @@
   "engines": {
     "node": ">=18"
   },
-  "files": [],
-  "scripts": {},
+  "files": [
+    "build/**/*"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "test": "jest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix"
+  },
   "devDependencies": {}
 }
